@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zzq="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.rollup.journey.activity.Main1Activity">
+
+    <com.rollup.journey.customview.TitleView
+        android:id="@+id/main1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zzq:text_title="@string/str_main_text1">
+    </com.rollup.journey.customview.TitleView>
+
+    <RelativeLayout android:id="@+id/main1_layout1"
+        android:layout_below="@id/main1_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_bg"
+        android:padding="@dimen/item_padding"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_margin_top">
+
+        <ImageView android:id="@+id/main1_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/main_electric1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/main1_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/text_padding"
+            android:textSize="@dimen/text_size"
+            android:text="@string/str_main_electric_build"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/guide_next"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/img_padding_right"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/main1_layout2"
+        android:layout_below="@id/main1_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_bg"
+        android:padding="@dimen/item_padding"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <ImageView android:id="@+id/main1_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/main_electric2"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/main1_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/text_padding"
+            android:textSize="@dimen/text_size"
+            android:text="@string/str_main_electric_add"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/guide_next"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/img_padding_right"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/main1_layout3"
+        android:layout_below="@id/main1_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_bg"
+        android:padding="@dimen/item_padding"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <ImageView android:id="@+id/main1_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/main_electric3"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/main1_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/text_size"
+            android:textSize="@dimen/text_size"
+            android:text="@string/str_main_electric_test"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/guide_next"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/img_padding_right"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/bottom_item_state"/>
+    </LinearLayout>
+
+</RelativeLayout>

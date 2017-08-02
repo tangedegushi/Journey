@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/dialog_map_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="使用以下方式找到路线"
+        android:textSize="24sp"/>
+    <ImageView android:id="@+id/dialog_map_line"
+        android:layout_below="@id/dialog_map_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_line"/>
+
+    <RadioGroup android:id="@+id/dialog_map_layout1"
+        android:layout_below="@id/dialog_map_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/dialog_map_img1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/main_map_gaode"/>
+
+        <TextView android:id="@+id/dialog_map_text1"
+            android:layout_toRightOf="@id/dialog_map_img1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="20dp"
+            android:text="高德地图"
+            android:textSize="18sp"/>
+
+        <RadioButton android:id="@+id/dialog_map_radio1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@mipmap/main_map_radio1"/>
+    </RadioGroup>
+
+    <ImageView android:id="@+id/dialog_map_line2"
+        android:layout_below="@id/dialog_map_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_line"/>
+
+    <RadioGroup android:id="@+id/dialog_map_layout2"
+        android:layout_below="@id/dialog_map_line2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/dialog_map_img2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@mipmap/main_map_google"/>
+
+        <TextView android:id="@+id/dialog_map_text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="20dp"
+            android:text="谷歌地图"
+            android:textSize="18sp"/>
+
+        <RadioButton android:id="@+id/dialog_map_radio2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@mipmap/main_map_radio1"/>
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zzq="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main1_build"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.rollup.journey.activity.Main1BuildActivity">
+
+    <com.rollup.journey.customview.TitleView
+        android:id="@+id/main1_build_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zzq:text_title="@string/str_main_electric_build1">
+    </com.rollup.journey.customview.TitleView>
+
+    <LinearLayout
+        android:layout_below="@id/main1_build_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/str_main_team_name"
+            android:textSize="18sp"/>
+        <EditText android:id="@+id/main1_build_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:hint="@string/str_main_pl_team_name"
+            android:gravity="center"
+            android:background="@drawable/main_build_edit_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/str_main_team_people_num"
+            android:textSize="18sp"/>
+        <EditText android:id="@+id/main1_build_total"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:hint="@string/str_main_pl_team_people_num"
+            android:gravity="center"
+            android:background="@drawable/main_build_edit_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/str_main_team_time"
+            android:textSize="18sp"/>
+        <EditText android:id="@+id/main1_build_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:hint="@string/str_main_pl_team_time"
+            android:gravity="center"
+            android:background="@drawable/main_build_edit_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/str_main_team_destination"
+            android:textSize="18sp"/>
+        <EditText android:id="@+id/main1_build_destination"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:hint="@string/str_main_pl_team_destination"
+            android:gravity="center"
+            android:background="@drawable/main_build_edit_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/str_main_team_traffic_info"
+            android:textSize="18sp"/>
+        <EditText android:id="@+id/main1_build_traffic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:hint="@string/str_main_pl_team_traffic_info"
+            android:gravity="center"
+            android:background="@drawable/main_build_edit_bg"/>
+
+        <TextView android:id="@+id/main1_build_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/str_main_team_confirm"
+            android:textColor="#ffffff"
+            android:background="@mipmap/main_build_btn_confirm"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/bottom_item_state"/>
+    </LinearLayout>
+
+</RelativeLayout>

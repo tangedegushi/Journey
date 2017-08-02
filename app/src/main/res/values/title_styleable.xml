@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleStyle">
+        <attr name="img_left" format="reference" ></attr>
+        <attr name="text_title" format="string|reference"></attr>
+        <attr name="img_right" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main1_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/item_bg"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    tools:context="com.rollup.journey.activity.Main1Activity">
+
+        <TextView android:id="@+id/main4_text_teamName"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:text="teamName"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@mipmap/guide_next"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

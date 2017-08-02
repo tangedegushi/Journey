@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView android:id="@+id/blue_scan_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/blue_icon"/>
+    <TextView android:id="@+id/blue_scan_name"
+        android:layout_toRightOf="@id/blue_scan_icon"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="18sp"/>
+    <TextView android:id="@+id/blue_scan_address"
+        android:layout_toRightOf="@id/blue_scan_name"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:textSize="18sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/guide_next"/>
+</RelativeLayout>

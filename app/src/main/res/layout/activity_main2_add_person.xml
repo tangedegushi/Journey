@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zzq="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2_add_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.rollup.journey.activity.Main2AddPersonActivity"
+    android:orientation="vertical">
+
+    <com.rollup.journey.customview.TitleView
+        android:id="@+id/main2_msg_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zzq:text_title="@string/str_main_message_send_all">
+    </com.rollup.journey.customview.TitleView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ebebeb"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/main2_msg_add_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/main_build_edit_bg"
+            android:gravity="center"
+            android:hint="Search" />
+
+        <TextView
+            android:id="@+id/main2_msg_add_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="@string/str_main_message_select_all_no"
+            android:textColor="#0BAB09"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/main2_msg_add_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/main2_msg_add_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/main_build_btn_confirm"
+        android:gravity="center"
+        android:text="@string/str_main_team_confirm"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:padding="6dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp">
+    </TextView>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        class="com.rollup.journey.customview.TitleView"/>
+
+    <include layout="@layout/bottom_item_state" />
+
+</LinearLayout>
